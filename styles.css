@@ -1,0 +1,93 @@
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+header {
+  background-color: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+#conteudo-principal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.mascote {
+  width: 200px;
+  border-radius: 2rem;
+}
+
+.descricao {
+  max-width: 500px;
+}
+
+#acessibilidade {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+#acessibilidade button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+#historia {
+  padding: 2rem;
+  background-color: #e6f0fa;
+  margin: 1rem auto;
+  max-width: 800px;
+  border-radius: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #0077cc;
+  color: white;
+}
+
+body.contraste {
+  background-color: black;
+  color: yellow;
+}
+
+
+body.alto-contraste {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.audio-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icone {
+  width: 60px;
+  height: 60px;
+  display: block;
+  margin: 10px auto;
+}

@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Meu Mundo Azul - Autismo e Acessibilidade</title>
+  <link rel="stylesheet" href="styles.css" />
+
+<script>
+function lerTexto(texto) {
+  const synth = window.speechSynthesis;
+  const utterance = new SpeechSynthesisUtterance(texto);
+  utterance.lang = 'pt-BR';
+  synth.speak(utterance);
+}
+</script>
+
+</head>
+<body>
+  <header>
+    <h1>Meu Mundo Azul</h1>
+    <p>Um espaço de acolhimento, empatia e informação sobre o autismo</p>
+  </header>
+
+  <section id="acessibilidade">
+    <button onclick="aumentarFonte()">A+</button>
+    <button onclick="diminuirFonte()">A-</button>
+    <button onclick="alternarContraste()">Alto Contraste</button>
+    <button onclick="mostrarHistoria()">Minha História</button>
+  </section>
+
+  <section id="conteudo-principal">
+    <img src="img/bonequinha.png" alt="Personagem representando a autora do site" class="mascote"/>
+    <div class="descricao">
+      <p>Este site nasceu da vontade de transformar uma vivência pessoal em acolhimento e informação para outras famílias.</p>
+    </div>
+  </section>
+
+  <section id="historia" style="display: none;">
+    <h2>Minha História</h2>
+    <p>
+      Meu irmão levou 15 anos para receber o diagnóstico de autismo. Durante esse tempo, enfrentamos muitas dificuldades,
+      desde atrasos escolares até o desconhecimento sobre o que ele realmente precisava. Criar este site é uma forma de
+      dar voz a essa história e ajudar outras pessoas a reconhecerem os sinais, acolherem com empatia e lutarem por mais
+      diagnóstico precoce.
+    </p>
+  </section>
+
+  <footer>
+    <p>Desenvolvido com carinho 💙</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+<section class="informacoes">
+  <h2>🧠 O que é o autismo?</h2>
+  <p>O autismo é um transtorno do neurodesenvolvimento que afeta a forma como a pessoa se comunica, interage socialmente e percebe o mundo. Cada indivíduo no espectro é único.</p>
+
+  <h2>🔍 Como identificar?</h2>
+  <p>Alguns sinais podem incluir dificuldade de interação social, padrões repetitivos de comportamento e atrasos na fala. O diagnóstico deve sempre ser feito por profissionais.</p>
+
+  <h2>📋 O processo de diagnóstico</h2>
+  <p>Inclui observação clínica, entrevistas com os responsáveis e aplicação de testes específicos por psicólogos, neurologistas ou psiquiatras.</p>
+
+  <h2>🌍 Como funciona o mundo para eles?</h2>
+  <p>Muitos autistas têm hipersensibilidade a sons, luzes e texturas. O mundo pode ser avassalador sem adaptações e empatia.</p>
+
+  <h2>📚 Livros recomendados</h2>
+  <ul>
+    <li><strong>“O Cérebro Autista” – Temple Grandin:</strong> Explica o funcionamento do cérebro de autistas com base na neurociência e na experiência pessoal da autora.</li>
+    <li><strong>“A Diferença Invisível” – Julie Dachez:</strong> Uma HQ tocante sobre o diagnóstico tardio e a aceitação da condição.</li>
+    <li><strong>“Na Minha Mente” – Adauto Souza:</strong> Livro brasileiro que retrata de forma sensível o olhar de um jovem autista sobre o mundo.</li>
+    <li><strong>“O Que Me Faz Pular” – Naoki Higashida:</strong> Escrito por um jovem não-verbal, revela com emoção como é viver com autismo.</li>
+  </ul>
+  <img src="icons/icones_autismo_geral.png" alt="Ícones representando autismo" style="width:100%; max-width:600px; margin-top:20px;">
+</section>
+
+
+<section class="dedicatoria" style="text-align: center; padding: 40px 20px; background-color: #fef6f9;">
+  <h2 style="font-size: 2rem; margin-bottom: 20px; color: #cc3366;">Dedicatória</h2>
+  <img src="images/dedicatoria_ana_rhyan.png" alt="Ana e Rhyan" style="max-width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+  <p style="font-size: 1.2rem; margin-top: 20px; color: #333; font-style: italic;">
+    "Com todo amor e admiração, da sua irmazona mais velha Ana, porque você, Rhyan, me ensinou a coragem das estrelas."
+  </p>
+</section>
+
+
+<section id="mais-sobre-autismo" style="padding: 40px 20px; background: #fff;">
+  <h2 style="font-size: 2rem; color: #2a2a2a;">Mais sobre o Autismo</h2>
+  <ul style="font-size: 1.1rem; color: #444; padding-left: 20px;">
+    <li><strong>Mitos comuns:</strong> Nem todo autista é igual. Existem diferentes níveis e formas de manifestação.</li>
+    <li><strong>Autismo em adultos:</strong> Muitas pessoas recebem o diagnóstico somente na vida adulta, o que pode atrasar o apoio necessário.</li>
+    <li><strong>Como ajudar:</strong> Professores e familiares devem escutar, adaptar o ambiente e estimular a autonomia da pessoa autista.</li>
+    <li><strong>Recursos de apoio:</strong> ONG Autismo & Realidade, AMA Brasil, Projeto Tea Brasil.</li>
+  </ul>
+</section>
+
+
+<section id="icones-por-secao" style="padding: 40px 20px; background: #f8f8f8;">
+  <h2 style="font-size: 2rem; margin-bottom: 20px;">Ícones Temáticos por Seção</h2>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px;">
+
+    <div style="text-align: center;">
+      <img src="img/icones/autismo.png" alt="Cérebro com peças de quebra-cabeça" style="width: 80px; height: auto;">
+      <p><strong>O que é o autismo</strong><br>Funcionamento neurológico diverso</p>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="img/icones/identificar.png" alt="Olho com lupa" style="width: 80px; height: auto;">
+      <p><strong>Como identificar</strong><br>Observação dos sinais comportamentais</p>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="img/icones/processo.png" alt="Calendário com checklists" style="width: 80px; height: auto;">
+      <p><strong>O processo</strong><br>Diagnóstico e acolhimento</p>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="img/icones/mundo.png" alt="Globo com figuras diversas" style="width: 80px; height: auto;">
+      <p><strong>Como funciona o mundo para eles</strong><br>Percepções e experiências autistas</p>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="img/icones/livros.png" alt="Livro aberto colorido" style="width: 80px; height: auto;">
+      <p><strong>Livros sobre autismo</strong><br>Histórias, vivências e aprendizados</p>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="informacoes">
+  <h2>O que é o autismo <button class="audio-button" onclick="lerTexto('O autismo é um transtorno do neurodesenvolvimento.')">🔊</button></h2>
+  <img class="icone" src="icons/autismo_icone1.png" alt="Ícone representando autismo" />
+  <p>O Transtorno do Espectro Autista (TEA) é uma condição que afeta o comportamento, comunicação e interação social.</p>
+
+  <h2>Como identificar <button class="audio-button" onclick="lerTexto('Alguns sinais aparecem na infância e variam de pessoa para pessoa.')">🔊</button></h2>
+  <img class="icone" src="icons/identificar_icone2.png" alt="Ícone para identificação" />
+  <p>Alterações na fala, comportamentos repetitivos, hipersensibilidade sensorial e dificuldade de socialização são alguns sinais.</p>
+
+  <h2>O processo <button class="audio-button" onclick="lerTexto('O diagnóstico pode ser complexo e requer acompanhamento especializado.')">🔊</button></h2>
+  <img class="icone" src="icons/processo_icone3.png" alt="Ícone do processo" />
+  <p>O processo de diagnóstico envolve equipe multidisciplinar, observações e testes de desenvolvimento.</p>
+
+  <h2>Como funciona o mundo para eles <button class="audio-button" onclick="lerTexto('Pessoas autistas percebem e processam o mundo de forma única.')">🔊</button></h2>
+  <img class="icone" src="icons/mundo_icone4.png" alt="Ícone percepção do mundo" />
+  <p>Podem ter hipersensibilidade a sons, toques e ambientes. Compreender isso é essencial para inclusão.</p>
+</section>
+
+<section id="livros">
+  <h2>Livros Recomendados</h2>
+  <div>
+    <img class="icone" src="icons/livro1.png" alt="Livro 1" />
+    <p><strong>O Cérebro Autista</strong>: Explica a ciência do autismo de forma acessível. Por Temple Grandin.</p>
+  </div>
+  <div>
+    <img class="icone" src="icons/livro2.png" alt="Livro 2" />
+    <p><strong>Uma Mente Inquieta</strong>: Relato pessoal sobre saúde mental e superação.</p>
+  </div>
+  <div>
+    <img class="icone" src="icons/livro3.png" alt="Livro 3" />
+    <p><strong>Do Jeito Que Eu Sou</strong>: Livro infantil que ajuda crianças a entender o autismo.</p>
+  </div>
+</section>
+
+<section id="mensagem-historia" style="display:none;">
+  <h2>Minha História</h2>
+  <p>Meu irmão Rhyan levou 15 anos para ser diagnosticado com autismo. Esse atraso causou dificuldades como o atraso escolar, mas também me ensinou muito. Com todo amor e admiração, da sua irmãzona mais velha Ana, porque você, Rhyan, me ensinou a coragem das estrelas.</p>
+  <img src="img/dedicatoria.png" alt="Ana e Rhyan juntos" style="max-width:300px; display:block; margin:auto;" />
+</section>
+
+</body>
+</html>
